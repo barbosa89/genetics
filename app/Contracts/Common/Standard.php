@@ -12,5 +12,5 @@ interface Standard
      *
      * @return Model
      */
-    public function get();
+    public function find();
 }
