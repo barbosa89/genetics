@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Contracts\Repositories;
-interface FooRepository {
-    public function create();
-    public function find(int $id);
-    public function update(array $data, $id);
-    public function delete(int $id);
+
+use App\Contracts\Repositories\Repository;
+
+interface FooRepository extends Repository {
+    public function all();
 }
